@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraAlgorithm", "DijkstraAlgorithm\DijkstraAlgorithm.csproj", "{79555904-E74F-408E-A206-E21A15791F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDijkstraAlgorithm", "SimpleDijkstraAlgorithm\SimpleDijkstraAlgorithm.csproj", "{917F9221-6FE0-49D3-BB2E-FAA8B7E3B419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSimpleDijkstraAlgorithm", "TestSimpleDijkstraAlgorithm\TestSimpleDijkstraAlgorithm.csproj", "{1593D572-B80F-4B1D-9881-2673A6716691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79555904-E74F-408E-A206-E21A15791F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79555904-E74F-408E-A206-E21A15791F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79555904-E74F-408E-A206-E21A15791F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79555904-E74F-408E-A206-E21A15791F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917F9221-6FE0-49D3-BB2E-FAA8B7E3B419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917F9221-6FE0-49D3-BB2E-FAA8B7E3B419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917F9221-6FE0-49D3-BB2E-FAA8B7E3B419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917F9221-6FE0-49D3-BB2E-FAA8B7E3B419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1593D572-B80F-4B1D-9881-2673A6716691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1593D572-B80F-4B1D-9881-2673A6716691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1593D572-B80F-4B1D-9881-2673A6716691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1593D572-B80F-4B1D-9881-2673A6716691}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2918C633-7643-4D07-86C6-C171F203386B}
+	EndGlobalSection
+EndGlobal
