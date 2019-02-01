@@ -4,8 +4,14 @@ namespace DijkstraAlgorithm
 {
     public class Vertex
     {
+        #region Properties
+
         public Guid Guid { get; }
         public string Name { get; set; }
+
+        #endregion Properties
+
+        #region Constructors
 
         public Vertex()
         {
@@ -16,5 +22,7 @@ namespace DijkstraAlgorithm
         {
             this.Name = name;
         }
+
+        #endregion Constructors
     }
 }
