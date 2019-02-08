@@ -7,13 +7,14 @@ namespace DijkstraAlgorithm
         #region Properties
 
         public Guid Guid { get; }
+
         public string Name { get; set; }
 
         #endregion Properties
 
         #region Constructors
 
-        public Vertex()
+        private Vertex()
         {
             this.Guid = Guid.NewGuid();
         }
@@ -24,5 +25,14 @@ namespace DijkstraAlgorithm
         }
 
         #endregion Constructors
+
+        #region Methods
+
+        public override string ToString()
+        {
+            return $"Vertex {this.Name}";
+        }
+
+        #endregion
     }
 }
