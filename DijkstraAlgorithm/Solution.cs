@@ -1,17 +1,25 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace DijkstraAlgorithm
 {
     public class Solution
     {
+        #region Properties
+
+        public IReadOnlyDictionary<Vertex, Path> Paths { get; }
         public Vertex Source { get; }
 
-        public IDictionary<Vertex, Path> Paths { get; }
+        #endregion Properties
 
-        public Solution(Vertex source)
+        #region Constructors
+
+        public Solution(Vertex source, IDictionary<Vertex, Path> paths)
         {
             this.Source = source;
-            this.Paths = new Dictionary<Vertex, Path>();
+            Paths = new ReadOnlyDictionary<Vertex, Path>(paths);
         }
+
+        #endregion Constructors
     }
 }

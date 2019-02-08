@@ -20,5 +20,14 @@
         }
 
         #endregion Constructors
+
+        #region Methods
+
+        public bool IsJoining(Vertex vertex1, Vertex vertex2)
+        {
+            return (vertex1 == Vertex1 && vertex2 == Vertex2) || (vertex1 == Vertex2 && vertex2 == Vertex1);
+        }
+
+        #endregion Methods
     }
 }
