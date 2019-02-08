@@ -40,6 +40,11 @@ namespace SimpleDijkstraAlgorithm
             return new Solution(source, pathsToVertexes);
         }
 
+        public override string ToString()
+        {
+            return "Simple Dijkstra algorithm";
+        }
+
         private static (List<Vertex>, Dictionary<Vertex, int>, Dictionary<Vertex, Path>) Initialize(Graph graph)
         {
             var vertexesToStudy = new List<Vertex>();
