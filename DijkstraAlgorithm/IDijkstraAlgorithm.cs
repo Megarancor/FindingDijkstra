@@ -8,6 +8,6 @@ namespace DijkstraAlgorithm
 {
     public interface IDijkstraAlgorithm
     {
-        Solution ShortestPath(Graph graph, Vertex source);
+        Solution ShortestPaths(Graph graph, Vertex source);
     }
 }

@@ -45,7 +45,7 @@ namespace DijkstraAlgorithm
 
             if (!this.solutions.ContainsKey(from))
             {
-                Solution solution = this.algorithm.ShortestPath(this.graph, from);
+                Solution solution = this.algorithm.ShortestPaths(this.graph, from);
                 if (solution != null)
                 {
                     this.solutions.Add(from, solution);

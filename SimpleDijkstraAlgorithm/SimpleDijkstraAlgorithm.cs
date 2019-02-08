@@ -8,7 +8,7 @@ namespace SimpleDijkstraAlgorithm
     {
         #region Methods
 
-        public Solution ShortestPath(Graph graph, Vertex source)
+        public Solution ShortestPaths(Graph graph, Vertex source)
         {
             (List<Vertex> vertexesToStudy,
              Dictionary<Vertex, int> distanceFromSource,
