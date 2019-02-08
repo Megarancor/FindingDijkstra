@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraAlgorithm", "Dijkst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDijkstraAlgorithm", "SimpleDijkstraAlgorithm\SimpleDijkstraAlgorithm.csproj", "{917F9221-6FE0-49D3-BB2E-FAA8B7E3B419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSimpleDijkstraAlgorithm", "TestSimpleDijkstraAlgorithm\TestSimpleDijkstraAlgorithm.csproj", "{1593D572-B80F-4B1D-9881-2673A6716691}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDijkstraAlgorithm", "TestDijkstraAlgorithm\TestDijkstraAlgorithm.csproj", "{1593D572-B80F-4B1D-9881-2673A6716691}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

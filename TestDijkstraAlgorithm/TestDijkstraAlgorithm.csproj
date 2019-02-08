@@ -8,8 +8,8 @@
     <ProjectGuid>{1593D572-B80F-4B1D-9881-2673A6716691}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestSimpleDijkstraAlgorithm</RootNamespace>
-    <AssemblyName>TestSimpleDijkstraAlgorithm</AssemblyName>
+    <RootNamespace>TestDijkstraAlgorithm</RootNamespace>
+    <AssemblyName>TestDijkstraAlgorithm</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="TestAlgorithm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestAlgorithmSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
