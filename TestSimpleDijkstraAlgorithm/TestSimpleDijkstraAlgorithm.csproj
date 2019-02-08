@@ -54,6 +54,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DijkstraAlgorithm\DijkstraAlgorithm.csproj">
+      <Project>{79555904-E74F-408E-A206-E21A15791F69}</Project>
+      <Name>DijkstraAlgorithm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SimpleDijkstraAlgorithm\SimpleDijkstraAlgorithm.csproj">
       <Project>{917f9221-6fe0-49d3-bb2e-faa8b7e3b419}</Project>
       <Name>SimpleDijkstraAlgorithm</Name>
