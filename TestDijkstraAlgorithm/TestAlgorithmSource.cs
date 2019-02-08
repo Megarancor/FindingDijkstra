@@ -6,21 +6,16 @@ namespace TestDijkstraAlgorithm
 {
     public class TestAlgorithmSource
     {
-        public static IEnumerable<TestCaseData> BuildTestCases()
-        {
-            (var vertexes, var edges) = BuildGraph();
-            foreach (var algorithm in DijkstraAlgorithms)
-            {
-                var graph = new Graph(algorithm, vertexes, edges);
-                yield return new TestCaseData(algorithm, graph, vertexes[2], vertexes[0], new[] { vertexes[2], vertexes[0] }).SetName($"{algorithm}: {vertexes[2]} to {vertexes[0]}");
-                yield return new TestCaseData(algorithm, graph, vertexes[2], vertexes[4], new[] { vertexes[2], vertexes[0], vertexes[1], vertexes[4] }).SetName($"{algorithm}: {vertexes[2]} to {vertexes[4]}");
-            }
-        }
+        #region Properties
 
         private static IEnumerable<IDijkstraAlgorithm> DijkstraAlgorithms => new[]
         {
             new SimpleDijkstraAlgorithm.SimpleDijkstraAlgorithm(),
         };
+
+        #endregion Properties
+
+        #region Methods
 
         private static (Vertex[] vertexes, Edge[] edges) BuildGraph()
         {
@@ -44,5 +39,18 @@ namespace TestDijkstraAlgorithm
             };
             return (vertexes, edges);
         }
+
+        public static IEnumerable<TestCaseData> BuildTestCases()
+        {
+            (var vertexes, var edges) = BuildGraph();
+            foreach (var algorithm in DijkstraAlgorithms)
+            {
+                var graph = new Graph(algorithm, vertexes, edges);
+                yield return new TestCaseData(algorithm, graph, vertexes[2], vertexes[0], new[] { vertexes[2], vertexes[0] }).SetName($"{algorithm}: {vertexes[2]} to {vertexes[0]}");
+                yield return new TestCaseData(algorithm, graph, vertexes[2], vertexes[4], new[] { vertexes[2], vertexes[0], vertexes[1], vertexes[4] }).SetName($"{algorithm}: {vertexes[2]} to {vertexes[4]}");
+            }
+        }
+
+        #endregion Methods
     }
 }
