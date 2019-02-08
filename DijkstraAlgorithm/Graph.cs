@@ -9,7 +9,6 @@ namespace DijkstraAlgorithm
     {
         #region Fields
 
-        private readonly IDijkstraAlgorithm dijkstraAlgorithm;
         private readonly IList<Edge> edges;
         private readonly IList<Vertex> vertexes;
 
@@ -27,7 +26,6 @@ namespace DijkstraAlgorithm
 
         public Graph(IDijkstraAlgorithm dijkstraAlgorithm, IEnumerable<Vertex> vertexes, IEnumerable<Edge> edges)
         {
-            this.dijkstraAlgorithm = dijkstraAlgorithm;
             this.vertexes = new List<Vertex>(vertexes);
             this.edges = new List<Edge>(edges);
             if (!this.CheckValidData())
