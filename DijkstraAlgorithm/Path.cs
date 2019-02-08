@@ -6,7 +6,7 @@ namespace DijkstraAlgorithm
     {
         #region Properties
 
-        public Vertex Destination { get; }
+        private Vertex Destination { get; set; }
 
         private Path BasePath { get; set; }
 
