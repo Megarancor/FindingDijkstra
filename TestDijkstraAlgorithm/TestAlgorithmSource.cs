@@ -12,8 +12,8 @@ namespace TestDijkstraAlgorithm
             foreach (var algorithm in DijkstraAlgorithms)
             {
                 var graph = new Graph(algorithm, vertexes, edges);
-                yield return new TestCaseData(graph, vertexes[2], vertexes[0], new[] { vertexes[2], vertexes[0] });
-                yield return new TestCaseData(graph, vertexes[2], vertexes[4], new[] { vertexes[2], vertexes[0], vertexes[1], vertexes[4] });
+                yield return new TestCaseData(algorithm, graph, vertexes[2], vertexes[0], new[] { vertexes[2], vertexes[0] }).SetName($"{algorithm}: {vertexes[2]} to {vertexes[0]}");
+                yield return new TestCaseData(algorithm, graph, vertexes[2], vertexes[4], new[] { vertexes[2], vertexes[0], vertexes[1], vertexes[4] }).SetName($"{algorithm}: {vertexes[2]} to {vertexes[4]}");
             }
         }
 

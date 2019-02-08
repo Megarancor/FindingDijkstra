@@ -10,9 +10,10 @@ namespace TestDijkstraAlgorithm
         #region Methods
 
         [Test, TestCaseSource(typeof(TestAlgorithmSource), nameof(TestAlgorithmSource.BuildTestCases))]
-        public void TestDijkstraAlgorithm(Graph graph, Vertex from, Vertex to, IEnumerable<Vertex> expected)
+        public void TestDijkstraAlgorithm(IDijkstraAlgorithm algorithm, Graph graph, Vertex from, Vertex to, IEnumerable<Vertex> expected)
         {
-            var calculatedPath = graph.ShortestPath(from, to).GetPathToDestination();
+            var solveGraph = new SolveGraph(algorithm, graph);
+            var calculatedPath = solveGraph.ShortestPath(from, to).GetPathToDestination();
             Assert.That(calculatedPath, Is.EqualTo(expected), $"Path from {from.Name} to {to.Name} miscalculated");
         }
 
