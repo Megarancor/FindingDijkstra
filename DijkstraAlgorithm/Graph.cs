@@ -24,7 +24,7 @@ namespace DijkstraAlgorithm
 
         #region Constructors
 
-        public Graph(IDijkstraAlgorithm dijkstraAlgorithm, IEnumerable<Vertex> vertexes, IEnumerable<Edge> edges)
+        public Graph(IEnumerable<Vertex> vertexes, IEnumerable<Edge> edges)
         {
             this.vertexes = new List<Vertex>(vertexes);
             this.edges = new List<Edge>(edges);
