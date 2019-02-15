@@ -51,12 +51,12 @@ namespace DijkstraAlgorithm
 
         public IEnumerable<Vertex> GetNeighborsOf(Vertex vertex)
         {
-            return this.Vertexes.Where(v => this.Edges.Any(e => e.IsJoining(vertex, v)));
+            return this.vertexes.Where(v => this.edges.Any(e => e.IsJoining(vertex, v)));
         }
 
         public int WeightBetween(Vertex vertex1, Vertex vertex2)
         {
-            return this.Edges.FirstOrDefault(e => e.IsJoining(vertex1, vertex2))?.Weight ??
+            return this.edges.FirstOrDefault(e => e.IsJoining(vertex1, vertex2))?.Weight ??
                    throw new
                        InvalidOperationException($"No edge connecting {vertex1.Name} and {vertex2.Name} was found");
         }
